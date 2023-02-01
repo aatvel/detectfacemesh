@@ -59,25 +59,27 @@ function App() {
         <Webcam
           ref={webcamRef}
           mirrored={true}
+          content="width=device-width, initial-scale=1.0"
           style={{
             position: "absolute",
             left: 0,
             right: 0,
             zindex: 9,
-            width: 640,
-            height: 480,
+            // width: '40vw',
+            // height: '40vh',
           }}
         />
 
         <canvas
           ref={canvasRef}
+          content="width=device-width, initial-scale=1.0"
           style={{
             position: "absolute",
             left: 0,
             right: 0,
             zindex: 9,
-            width: 640,
-            height: 480,
+            // width: '40vw',
+            // height: '40vh',
             transform: 'scaleX(-1)',
           }}
         />
