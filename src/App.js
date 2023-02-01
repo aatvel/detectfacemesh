@@ -55,17 +55,14 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header"> */}
         <Webcam
           ref={webcamRef}
           mirrored={true}
           style={{
             position: "absolute",
-            marginLeft: "auto",
-            marginRight: "auto",
             left: 0,
             right: 0,
-            textAlign: "center",
             zindex: 9,
             width: 640,
             height: 480,
@@ -76,18 +73,15 @@ function App() {
           ref={canvasRef}
           style={{
             position: "absolute",
-            marginLeft: "auto",
-            marginRight: "auto",
-            transform: 'scaleX(-1)',
             left: 0,
             right: 0,
-            textAlign: "center",
             zindex: 9,
             width: 640,
             height: 480,
+            transform: 'scaleX(-1)',
           }}
         />
-      </header>
+      {/* </header> */}
     </div>
   );
 }
