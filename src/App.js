@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 // import logo from './logo.svg';
 import "./App.css";
 import * as tf from "@tensorflow/tfjs";
@@ -16,7 +16,7 @@ function App() {
     );
     setInterval(() => {
       detect(net);
-    }, 10);
+    }, 0);
   };
 
   const detect = async (net) => {
@@ -50,9 +50,9 @@ function App() {
     }
   };
 
-  useEffect(() => {
-    runFacemesh();
-  }, []);
+
+
+  runFacemesh()
   return (
     <div className="App">
       {/* <header className="App-header"> */}
